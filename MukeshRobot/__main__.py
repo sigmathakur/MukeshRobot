@@ -452,21 +452,21 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="📕 Mᴀɴᴀɢᴇᴍᴇɴᴛ", callback_data="help_back"),
-                        InlineKeyboardButton(text="Mᴜsɪᴄ 🎧", callback_data="Music_")
-                    ],
-                    [
-                        InlineKeyboardButton(text="💁 Bᴀsɪᴄ ", callback_data="basic_help"),
-                        InlineKeyboardButton(text="Exᴘᴇʀᴛ 👮", callback_data="expert_help")
-                    ],
-                    [
-                        InlineKeyboardButton(text="🍹 Aᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
-                        InlineKeyboardButton(text="Dᴏɴᴀᴛɪᴏɴ 🎉", callback_data="donation_help") 
-                    ],
-                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
-                ]
+    [
+        [
+            InlineKeyboardButton(text="📕 Mᴀɴᴀɢᴇᴍᴇɴᴛ", callback_data="help_back"),
+        ],
+        [
+            InlineKeyboardButton(text="💁 Bᴀsɪᴄ ", callback_data="basic_help"),
+            InlineKeyboardButton(text="Exᴘᴇʀᴛ 👮", callback_data="expert_help")
+        ],
+        [
+            InlineKeyboardButton(text="🍹 Aᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
+            InlineKeyboardButton(text="Dᴏɴᴀᴛɪᴏɴ 🎉", callback_data="donation_help")
+        ],
+        [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
+    ]
+            
             ),
         )
     elif query.data=="basic_help":
